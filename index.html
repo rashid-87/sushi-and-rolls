@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>rolishop</title>
+  <link rel="stylesheet" href="./src/css/style.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;1,400&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="header">
+    <div class="container">
+      <div class="header__wrapper">
+        <img class="header__img" width="200" src="./src/images/logo/logo.svg" alt="logo-img">
+        <h1 class="header__title">Доставка роллов</h1>
+        <p class="header__text">Оперативно и вкусно</p>
+      </div>
+    </div>
+  </header>
+  <main>
+    <section class="row">
+      <div class="container">
+        <div class="row__wrapper">
+          <div class="row__left">
+            <div class="row__wrapp" data-id="1">
+              <img class="row__img" src="./src/images/roll/philadelphia.jpg" alt="img-roll">
+              <h2 class="row__title">Филадельфия хит ролл</h2>
+              <p class="row__text">6 шт.</p>
+              <div class="row__counter">
+                <div class="row__item">
+                  <div class="row__control" data-action="minus">-</div>
+                  <div class="row__current" data-counter="">1</div>
+                  <div class="row__control" data-action="plus">+</div>
+                </div>
+                <h3 class="row__currency">300 ₽</h3>
+              </div>
+              <button data-id class="row__btn" type="button">+ в корзину</button>
+            </div>
+            <div class="row__wrapp" data-id="2">
+              <img class="row__img" src="./src/images/roll/california-tempura.jpg" alt="img-roll">
+              <h2 class="row__title">Калифорния темпура</h2>
+              <p class="row__text">8 шт.</p>
+              <div class="row__counter">
+                <div class="row__item">
+                  <div class="row__control" data-action="minus">-</div>
+                  <div class="row__current" data-counter="">1</div>
+                  <div class="row__control" data-action="plus">+</div>
+                </div>
+                <h3 class="row__currency">250 ₽</h3>
+              </div>
+              <button class="row__btn" type="button">+ в корзину</button>
+            </div>
+            <div class="row__wrapp" data-id="3">
+              <img class="row__img" src="./src/images/roll/zapech-california.jpg" alt="img-roll">
+              <h2 class="row__title">Запеченый ролл</h2>
+              <p class="row__text">6 шт.</p>
+              <div class="row__counter">
+                <div class="row__item">
+                  <div class="row__control" data-action="minus">-</div>
+                  <div class="row__current" data-counter="">1</div>
+                  <div class="row__control" data-action="plus">+</div>
+                </div>
+                <h3 class="row__currency">230 ₽</h3>
+              </div>
+              <button class="row__btn" type="button">+ в корзину</button>
+            </div>
+            <div class="row__wrapp" data-id="4">
+              <img class="row__img" src="./src/images/roll/philadelphia.jpg" alt="img-roll">
+              <h2 class="row__title">Филадельфия</h2>
+              <p class="row__text">6 шт.</p>
+              <div class="row__counter">
+                <div class="row__item">
+                  <div class="row__control" data-action="minus">-</div>
+                  <div class="row__current" data-counter="">1</div>
+                  <div class="row__control" data-action="plus">+</div>
+                </div>
+                <h3 class="row__currency">320 ₽</h3>
+              </div>
+              <button class="row__btn" type="button">+ в корзину</button>
+            </div>
+          </div>
+          <div class="row__rigth">
+            <div class="row__card">
+              <h3 class="row__subtitle">Ваш заказ</h3>
+              <div class="row__tops">
+              </div>
+              <hr>
+              <br>
+              <p>
+                <span class="row__h5">Итого:</span>
+                <span class="row__total">0</span> 
+                <span class="row__rouble">₽</span></p>
+              <p class="row__delivery">Доставка: бесплатно </p>
+              <br>
+              <hr>
+              <div class="row__bordertop">
+                <h5 class="row__titlies">Оформить заказ</h5>
+                <form class="row__form">
+                  <label>
+                    <input class="row__controls" type="number" placeholder="+996 Ваш номер" required>
+                  </label>
+                  <button class="row__primary" type="submit">Заказать</button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <script src="./src/js/calcCard.js"></script>
+  <script src="./src/js/count.js"></script>
+  <script src="./src/js/card.js"></script>
+</body>
+</html>
